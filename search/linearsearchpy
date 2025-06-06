@@ -1,0 +1,13 @@
+def ls(arr,n,x):
+    for i in range(0,n):
+        if(arr[i] == x):
+            return i
+    return -1
+arr = [4,8,1,9,10,56]    
+x= eval(input("enter x- ; "))
+n = len(arr)
+result = ls(arr,n,x)
+if(result != -1):
+    print("Element is present in array")
+else:
+    print("Elemenrt not present")
